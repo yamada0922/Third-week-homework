@@ -220,15 +220,22 @@ table {
   }
   .style{
     width: 33%;
+  }
+  .style p{
     font-family: "Roboto";
-    font-size: 48px;
+    font-size: clamp(24px, 4vw, 48px);
     font-style: italic;
     text-align: center;
     color: #AA0601;
     font-weight: bold;
   }
+  .style img {
+    width: 100%;
+    height: auto;
+}
   .style-card{
     gap: 24px;
+    max-width: 100%
   }
   .glasses h2{
     font-size: 48px;
@@ -248,6 +255,9 @@ table {
     }
     .style {
         width: 100%;
+    }
+    .style p {
+      font-size: 48px;
     }
     .style-card{
         flex-wrap: wrap;
